@@ -7,26 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84482B0B1CE2D420004B3138 /* YTKBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482AFA1CE2D420004B3138 /* YTKBaseRequest.m */; };
+		84482B0C1CE2D420004B3138 /* YTKBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482AFC1CE2D420004B3138 /* YTKBatchRequest.m */; };
+		84482B0D1CE2D420004B3138 /* YTKBatchRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482AFE1CE2D420004B3138 /* YTKBatchRequestAgent.m */; };
+		84482B0E1CE2D420004B3138 /* YTKChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482B001CE2D420004B3138 /* YTKChainRequest.m */; };
+		84482B0F1CE2D420004B3138 /* YTKChainRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482B021CE2D420004B3138 /* YTKChainRequestAgent.m */; };
+		84482B101CE2D420004B3138 /* YTKNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482B041CE2D420004B3138 /* YTKNetworkAgent.m */; };
+		84482B111CE2D420004B3138 /* YTKNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482B061CE2D420004B3138 /* YTKNetworkConfig.m */; };
+		84482B121CE2D420004B3138 /* YTKNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482B081CE2D420004B3138 /* YTKNetworkPrivate.m */; };
+		84482B131CE2D420004B3138 /* YTKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482B0A1CE2D420004B3138 /* YTKRequest.m */; };
 		846965BE1CD98D3A0050CF48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965BD1CD98D3A0050CF48 /* main.m */; };
 		846965C11CD98D3A0050CF48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965C01CD98D3A0050CF48 /* AppDelegate.m */; };
 		846965C41CD98D3A0050CF48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965C31CD98D3A0050CF48 /* ViewController.m */; };
 		846965C71CD98D3A0050CF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846965C51CD98D3A0050CF48 /* Main.storyboard */; };
 		846965C91CD98D3A0050CF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846965C81CD98D3A0050CF48 /* Assets.xcassets */; };
 		846965CC1CD98D3A0050CF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846965CA1CD98D3A0050CF48 /* LaunchScreen.storyboard */; };
-		846965E61CD98FB60050CF48 /* YTKBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965D51CD98FB60050CF48 /* YTKBaseRequest.m */; };
-		846965E71CD98FB60050CF48 /* YTKBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965D71CD98FB60050CF48 /* YTKBatchRequest.m */; };
-		846965E81CD98FB60050CF48 /* YTKBatchRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965D91CD98FB60050CF48 /* YTKBatchRequestAgent.m */; };
-		846965E91CD98FB60050CF48 /* YTKChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965DB1CD98FB60050CF48 /* YTKChainRequest.m */; };
-		846965EA1CD98FB60050CF48 /* YTKChainRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965DD1CD98FB60050CF48 /* YTKChainRequestAgent.m */; };
-		846965EB1CD98FB60050CF48 /* YTKNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965DF1CD98FB60050CF48 /* YTKNetworkAgent.m */; };
-		846965EC1CD98FB60050CF48 /* YTKNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965E11CD98FB60050CF48 /* YTKNetworkConfig.m */; };
-		846965ED1CD98FB60050CF48 /* YTKNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965E31CD98FB60050CF48 /* YTKNetworkPrivate.m */; };
-		846965EE1CD98FB60050CF48 /* YTKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965E51CD98FB60050CF48 /* YTKRequest.m */; };
 		846965F11CD9C9680050CF48 /* GetVexApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965F01CD9C9680050CF48 /* GetVexApi.m */; };
 		9655877725FB63E2659CD491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C585D72132E742EAD8FB4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84482AF91CE2D420004B3138 /* YTKBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBaseRequest.h; sourceTree = "<group>"; };
+		84482AFA1CE2D420004B3138 /* YTKBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKBaseRequest.m; sourceTree = "<group>"; };
+		84482AFB1CE2D420004B3138 /* YTKBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBatchRequest.h; sourceTree = "<group>"; };
+		84482AFC1CE2D420004B3138 /* YTKBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKBatchRequest.m; sourceTree = "<group>"; };
+		84482AFD1CE2D420004B3138 /* YTKBatchRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBatchRequestAgent.h; sourceTree = "<group>"; };
+		84482AFE1CE2D420004B3138 /* YTKBatchRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKBatchRequestAgent.m; sourceTree = "<group>"; };
+		84482AFF1CE2D420004B3138 /* YTKChainRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKChainRequest.h; sourceTree = "<group>"; };
+		84482B001CE2D420004B3138 /* YTKChainRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKChainRequest.m; sourceTree = "<group>"; };
+		84482B011CE2D420004B3138 /* YTKChainRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKChainRequestAgent.h; sourceTree = "<group>"; };
+		84482B021CE2D420004B3138 /* YTKChainRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKChainRequestAgent.m; sourceTree = "<group>"; };
+		84482B031CE2D420004B3138 /* YTKNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKNetworkAgent.h; sourceTree = "<group>"; };
+		84482B041CE2D420004B3138 /* YTKNetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkAgent.m; sourceTree = "<group>"; };
+		84482B051CE2D420004B3138 /* YTKNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKNetworkConfig.h; sourceTree = "<group>"; };
+		84482B061CE2D420004B3138 /* YTKNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkConfig.m; sourceTree = "<group>"; };
+		84482B071CE2D420004B3138 /* YTKNetworkPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKNetworkPrivate.h; sourceTree = "<group>"; };
+		84482B081CE2D420004B3138 /* YTKNetworkPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkPrivate.m; sourceTree = "<group>"; };
+		84482B091CE2D420004B3138 /* YTKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKRequest.h; sourceTree = "<group>"; };
+		84482B0A1CE2D420004B3138 /* YTKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKRequest.m; sourceTree = "<group>"; };
 		846965B91CD98D3A0050CF48 /* LZNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846965BD1CD98D3A0050CF48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		846965BF1CD98D3A0050CF48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,24 +55,6 @@
 		846965C81CD98D3A0050CF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846965CB1CD98D3A0050CF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846965CD1CD98D3A0050CF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		846965D41CD98FB60050CF48 /* YTKBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBaseRequest.h; sourceTree = "<group>"; };
-		846965D51CD98FB60050CF48 /* YTKBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKBaseRequest.m; sourceTree = "<group>"; };
-		846965D61CD98FB60050CF48 /* YTKBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBatchRequest.h; sourceTree = "<group>"; };
-		846965D71CD98FB60050CF48 /* YTKBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKBatchRequest.m; sourceTree = "<group>"; };
-		846965D81CD98FB60050CF48 /* YTKBatchRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBatchRequestAgent.h; sourceTree = "<group>"; };
-		846965D91CD98FB60050CF48 /* YTKBatchRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKBatchRequestAgent.m; sourceTree = "<group>"; };
-		846965DA1CD98FB60050CF48 /* YTKChainRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKChainRequest.h; sourceTree = "<group>"; };
-		846965DB1CD98FB60050CF48 /* YTKChainRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKChainRequest.m; sourceTree = "<group>"; };
-		846965DC1CD98FB60050CF48 /* YTKChainRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKChainRequestAgent.h; sourceTree = "<group>"; };
-		846965DD1CD98FB60050CF48 /* YTKChainRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKChainRequestAgent.m; sourceTree = "<group>"; };
-		846965DE1CD98FB60050CF48 /* YTKNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKNetworkAgent.h; sourceTree = "<group>"; };
-		846965DF1CD98FB60050CF48 /* YTKNetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkAgent.m; sourceTree = "<group>"; };
-		846965E01CD98FB60050CF48 /* YTKNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKNetworkConfig.h; sourceTree = "<group>"; };
-		846965E11CD98FB60050CF48 /* YTKNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkConfig.m; sourceTree = "<group>"; };
-		846965E21CD98FB60050CF48 /* YTKNetworkPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKNetworkPrivate.h; sourceTree = "<group>"; };
-		846965E31CD98FB60050CF48 /* YTKNetworkPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkPrivate.m; sourceTree = "<group>"; };
-		846965E41CD98FB60050CF48 /* YTKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKRequest.h; sourceTree = "<group>"; };
-		846965E51CD98FB60050CF48 /* YTKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKRequest.m; sourceTree = "<group>"; };
 		846965EF1CD9C9680050CF48 /* GetVexApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVexApi.h; sourceTree = "<group>"; };
 		846965F01CD9C9680050CF48 /* GetVexApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVexApi.m; sourceTree = "<group>"; };
 		A58A22BB3D2103F4EA05BF93 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84482AF81CE2D420004B3138 /* LZNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				84482AF91CE2D420004B3138 /* YTKBaseRequest.h */,
+				84482AFA1CE2D420004B3138 /* YTKBaseRequest.m */,
+				84482AFB1CE2D420004B3138 /* YTKBatchRequest.h */,
+				84482AFC1CE2D420004B3138 /* YTKBatchRequest.m */,
+				84482AFD1CE2D420004B3138 /* YTKBatchRequestAgent.h */,
+				84482AFE1CE2D420004B3138 /* YTKBatchRequestAgent.m */,
+				84482AFF1CE2D420004B3138 /* YTKChainRequest.h */,
+				84482B001CE2D420004B3138 /* YTKChainRequest.m */,
+				84482B011CE2D420004B3138 /* YTKChainRequestAgent.h */,
+				84482B021CE2D420004B3138 /* YTKChainRequestAgent.m */,
+				84482B031CE2D420004B3138 /* YTKNetworkAgent.h */,
+				84482B041CE2D420004B3138 /* YTKNetworkAgent.m */,
+				84482B051CE2D420004B3138 /* YTKNetworkConfig.h */,
+				84482B061CE2D420004B3138 /* YTKNetworkConfig.m */,
+				84482B071CE2D420004B3138 /* YTKNetworkPrivate.h */,
+				84482B081CE2D420004B3138 /* YTKNetworkPrivate.m */,
+				84482B091CE2D420004B3138 /* YTKRequest.h */,
+				84482B0A1CE2D420004B3138 /* YTKRequest.m */,
+			);
+			path = LZNetwork;
+			sourceTree = "<group>";
+		};
 		846965B01CD98D390050CF48 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +120,7 @@
 		846965BB1CD98D3A0050CF48 /* LZNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				846965D31CD98FB60050CF48 /* YTKNetwork */,
+				84482AF81CE2D420004B3138 /* LZNetwork */,
 				846965BF1CD98D3A0050CF48 /* AppDelegate.h */,
 				846965C01CD98D3A0050CF48 /* AppDelegate.m */,
 				846965EF1CD9C9680050CF48 /* GetVexApi.h */,
@@ -117,31 +142,6 @@
 				846965BD1CD98D3A0050CF48 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		846965D31CD98FB60050CF48 /* YTKNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				846965D41CD98FB60050CF48 /* YTKBaseRequest.h */,
-				846965D51CD98FB60050CF48 /* YTKBaseRequest.m */,
-				846965D61CD98FB60050CF48 /* YTKBatchRequest.h */,
-				846965D71CD98FB60050CF48 /* YTKBatchRequest.m */,
-				846965D81CD98FB60050CF48 /* YTKBatchRequestAgent.h */,
-				846965D91CD98FB60050CF48 /* YTKBatchRequestAgent.m */,
-				846965DA1CD98FB60050CF48 /* YTKChainRequest.h */,
-				846965DB1CD98FB60050CF48 /* YTKChainRequest.m */,
-				846965DC1CD98FB60050CF48 /* YTKChainRequestAgent.h */,
-				846965DD1CD98FB60050CF48 /* YTKChainRequestAgent.m */,
-				846965DE1CD98FB60050CF48 /* YTKNetworkAgent.h */,
-				846965DF1CD98FB60050CF48 /* YTKNetworkAgent.m */,
-				846965E01CD98FB60050CF48 /* YTKNetworkConfig.h */,
-				846965E11CD98FB60050CF48 /* YTKNetworkConfig.m */,
-				846965E21CD98FB60050CF48 /* YTKNetworkPrivate.h */,
-				846965E31CD98FB60050CF48 /* YTKNetworkPrivate.m */,
-				846965E41CD98FB60050CF48 /* YTKRequest.h */,
-				846965E51CD98FB60050CF48 /* YTKRequest.m */,
-			);
-			path = YTKNetwork;
 			sourceTree = "<group>";
 		};
 		9C28D75875B25B36CEC8923D /* Pods */ = {
@@ -282,19 +282,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846965E71CD98FB60050CF48 /* YTKBatchRequest.m in Sources */,
-				846965EB1CD98FB60050CF48 /* YTKNetworkAgent.m in Sources */,
+				84482B0E1CE2D420004B3138 /* YTKChainRequest.m in Sources */,
+				84482B0F1CE2D420004B3138 /* YTKChainRequestAgent.m in Sources */,
+				84482B111CE2D420004B3138 /* YTKNetworkConfig.m in Sources */,
 				846965C41CD98D3A0050CF48 /* ViewController.m in Sources */,
+				84482B0C1CE2D420004B3138 /* YTKBatchRequest.m in Sources */,
 				846965C11CD98D3A0050CF48 /* AppDelegate.m in Sources */,
-				846965EE1CD98FB60050CF48 /* YTKRequest.m in Sources */,
-				846965ED1CD98FB60050CF48 /* YTKNetworkPrivate.m in Sources */,
 				846965BE1CD98D3A0050CF48 /* main.m in Sources */,
-				846965EC1CD98FB60050CF48 /* YTKNetworkConfig.m in Sources */,
-				846965EA1CD98FB60050CF48 /* YTKChainRequestAgent.m in Sources */,
-				846965E61CD98FB60050CF48 /* YTKBaseRequest.m in Sources */,
+				84482B121CE2D420004B3138 /* YTKNetworkPrivate.m in Sources */,
+				84482B0B1CE2D420004B3138 /* YTKBaseRequest.m in Sources */,
+				84482B0D1CE2D420004B3138 /* YTKBatchRequestAgent.m in Sources */,
 				846965F11CD9C9680050CF48 /* GetVexApi.m in Sources */,
-				846965E91CD98FB60050CF48 /* YTKChainRequest.m in Sources */,
-				846965E81CD98FB60050CF48 /* YTKBatchRequestAgent.m in Sources */,
+				84482B131CE2D420004B3138 /* YTKRequest.m in Sources */,
+				84482B101CE2D420004B3138 /* YTKNetworkAgent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

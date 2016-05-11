@@ -80,11 +80,11 @@ typedef void(^YTKRequestCompletionBlock)(__kindof YTKBaseRequest *request);
 
 @property (nonatomic, strong, readonly) NSDictionary *responseHeaders;
 
-@property (nonatomic, strong, readonly) NSData *responseData;
+@property (nonatomic, strong) NSData *responseData;
 
-@property (nonatomic, strong, readonly) NSString *responseString;
+@property (nonatomic, strong) NSString *responseString;
 
-@property (nonatomic, strong, readonly) id responseJSONObject;
+@property (nonatomic, strong) id responseJSONObject;
 
 @property (nonatomic, readonly) NSInteger responseStatusCode;
 

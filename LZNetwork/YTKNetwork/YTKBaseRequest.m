@@ -150,24 +150,36 @@
     self.failureCompletionBlock = nil;
 }
 
-//- (id)responseJSONObject {
-//    if (!responseData) {
-//        _responseData = nil;
-//    } else {
-//        _responseData = [NSData dataWithBytes:responseData.bytes length:responseData.length];
-//    }
-//    return self.requestTask.response;
-//    return self.requestTask.responseObject;
-//}
+- (id)responseJSONObject {
+    if(!_responseJSONObject)
+    {
+        if(self.responseData)
+        {
+            _responseJSONObject =[[NSString alloc]initWithData:self.responseData encoding:NSUTF8StringEncoding];
+        }else if(self.responseString){
+            _responseJSONObject=self.responseString;
+        }
+    }
+    return _responseJSONObject;
+}
+
 //
 //- (NSData *)responseData {
 //    userInfo[AFNetworkingTaskDidCompleteResponseSerializerKey] = manager.responseSerializer;
 //    return self.requestTask.responseData;
 //}
 //
-//- (NSString *)responseString {
-//    return self.requestTask.responseString;
-//}
+
+- (NSString *)responseString {
+    if(!_responseString)
+    {
+        if(self.responseData)
+        {
+            _responseString =[[NSString alloc]initWithData:self.responseData encoding:NSUTF8StringEncoding];
+        }
+    }
+    return _responseString;
+}
 
 - (NSInteger)responseStatusCode {
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)self.requestTask.response;

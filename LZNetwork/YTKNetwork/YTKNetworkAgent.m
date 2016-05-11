@@ -119,7 +119,7 @@
     if (customUrlRequest) {
         __weak typeof(self) weakSelf = self;
         [_manager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
-            [weakSelf handleRequestResult:dataTask];
+            [weakSelf handleRequestResult:dataTask responseObject:data];
         }];
     } else {
         if (method == YTKRequestMethodGet) {
@@ -133,13 +133,13 @@
                 } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
                     request.resumableDownloadProgressBlock(downloadProgress);
                 } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-                    [self handleRequestResult:dataTask];
+                    [self handleRequestResult:dataTask responseObject:responseObject];
                 }];
             } else {
                 request.requestTask =[_manager GET:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                    [self handleRequestResult:task];
+                    [self handleRequestResult:task responseObject:responseObject];
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                    [self handleRequestResult:task];
+                    [self handleRequestResult:task responseObject:error];
                 }];
             }
         } else if (method == YTKRequestMethodPost) {
@@ -148,40 +148,40 @@
                                             progress:^(NSProgress * _Nonnull uploadProgress) {
                     //
                 } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                    [self handleRequestResult:task];
+                    [self handleRequestResult:task responseObject:responseObject];
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                    [self handleRequestResult:task];
+                    [self handleRequestResult:task responseObject:error];
                 }];
             } else {
                 request.requestTask = [_manager POST:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                    [self handleRequestResult:task];
+                    [self handleRequestResult:task responseObject:responseObject];
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                    [self handleRequestResult:task];
+                    [self handleRequestResult:task responseObject:error];
                 }];
             }
         } else if (method == YTKRequestMethodHead) {
             request.requestTask = [_manager HEAD:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:nil];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:error];
             }];
         } else if (method == YTKRequestMethodPut) {
             request.requestTask = [_manager PUT:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:responseObject];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:error];
             }];
         } else if (method == YTKRequestMethodDelete) {
             request.requestTask = [_manager DELETE:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:responseObject];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:error];
             }];
         } else if (method == YTKRequestMethodPatch) {
             request.requestTask = [_manager PATCH:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:responseObject];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                [self handleRequestResult:task];
+                [self handleRequestResult:task responseObject:error];
             }];
         } else {
             YTKLog(@"Error, unsupport method type");
@@ -207,7 +207,7 @@
     }
 }
 
-- (BOOL)checkResult:(YTKBaseRequest *)request {
+- (BOOL)checkResult:(YTKBaseRequest *)request{
     BOOL result = [request statusCodeValidator];
     if (!result) {
         return result;
@@ -220,11 +220,18 @@
     return result;
 }
 
-- (void)handleRequestResult:(NSURLSessionDataTask *)operation {
+- (void)handleRequestResult:(NSURLSessionDataTask *)operation responseObject:(id)responseObject{
     NSString *key = [self requestHashKey:operation];
     YTKBaseRequest *request = _requestsRecord[key];
     YTKLog(@"Finished Request: %@", NSStringFromClass([request class]));
-    if (request) {
+    if (request&&![responseObject isKindOfClass:[NSError class]]) {
+        if([responseObject isKindOfClass:[NSData class]])
+        {
+            request.responseData=responseObject;
+        }else
+        {
+            request.responseString=responseObject;
+        }
         BOOL succeed = [self checkResult:request];
         if (succeed) {
             [request toggleAccessoriesWillStopCallBack];

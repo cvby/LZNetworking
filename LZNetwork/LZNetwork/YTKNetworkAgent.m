@@ -118,8 +118,12 @@
     NSURLRequest *customUrlRequest= [request buildCustomUrlRequest];
     if (customUrlRequest) {
         __weak typeof(self) weakSelf = self;
-        [_manager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
-            [weakSelf handleRequestResult:dataTask responseObject:data];
+        NSURLSessionDataTask *dataTask=[_manager dataTaskWithRequest:customUrlRequest uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+            request.resumableDownloadProgressBlock(uploadProgress);
+        } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
+            request.resumableDownloadProgressBlock(downloadProgress);
+        } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+            [self handleRequestResult:dataTask responseObject:responseObject];
         }];
     } else {
         if (method == YTKRequestMethodGet) {

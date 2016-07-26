@@ -123,13 +123,14 @@
         } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
             request.resumableDownloadProgressBlock(downloadProgress);
         } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-            [weakSelf handleRequestResult:dataTask responseObject:responseObject];
+//            [weakSelf handleRequestResult:dataTask responseObject:responseObject];
         }];
         [_manager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
             [weakSelf handleRequestResult:dataTask responseObject:data];
         }];
     } else {
         if (method == YTKRequestMethodGet) {
+            __weak typeof(self) weakSelf = self;
             if (request.resumableDownloadPath) {
                 // add parameters to URL;
                 NSString *filteredUrl = [YTKNetworkPrivate urlStringWithOriginUrlString:url appendParameters:param];
@@ -150,7 +151,7 @@
                 }];
             }
             [_manager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
-                [self handleRequestResult:dataTask responseObject:data];
+                [weakSelf handleRequestResult:dataTask responseObject:data];
             }];
         } else if (method == YTKRequestMethodPost) {
             if (constructingBlock != nil) {

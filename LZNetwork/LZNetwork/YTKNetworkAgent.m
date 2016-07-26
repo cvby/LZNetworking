@@ -118,13 +118,10 @@
     NSURLRequest *customUrlRequest= [request buildCustomUrlRequest];
     if (customUrlRequest) {
         __weak typeof(self) weakSelf = self;
-        request.requestTask=[_manager dataTaskWithRequest:customUrlRequest uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
-            request.resumableDownloadProgressBlock(uploadProgress);
-        } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
-            request.resumableDownloadProgressBlock(downloadProgress);
-        } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-//            [weakSelf handleRequestResult:dataTask responseObject:responseObject];
+        request.requestTask=[_manager dataTaskWithRequest:customUrlRequest completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+            //
         }];
+        [request.requestTask resume];
         [_manager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
             [weakSelf handleRequestResult:dataTask responseObject:data];
         }];

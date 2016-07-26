@@ -24,6 +24,7 @@
 #import "YTKBaseRequest.h"
 #import "YTKNetworkAgent.h"
 #import "YTKNetworkPrivate.h"
+#import "AFHTTPSessionManager.h"
 
 @implementation YTKBaseRequest
 
@@ -75,6 +76,9 @@
 }
 
 - (NSURLRequest *)buildCustomUrlRequest {
+//    AFHTTPSessionManager* manger=[[AFHTTPSessionManager alloc]init];
+//    NSMutableURLRequest *request = [manger.requestSerializer requestWithMethod:@"GET" URLString:[[NSURL URLWithString:@"https://www.v2ex.com/api/topics/hot.json"] absoluteString] parameters:nil error:nil];
+//    return request;
     return nil;
 }
 

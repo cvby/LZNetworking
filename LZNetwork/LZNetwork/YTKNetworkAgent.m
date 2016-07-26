@@ -118,7 +118,7 @@
     NSURLRequest *customUrlRequest= [request buildCustomUrlRequest];
     if (customUrlRequest) {
         __weak typeof(self) weakSelf = self;
-        NSURLSessionDataTask *dataTask=[_manager dataTaskWithRequest:customUrlRequest uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+        request.requestTask=[_manager dataTaskWithRequest:customUrlRequest uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
             request.resumableDownloadProgressBlock(uploadProgress);
         } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
             request.resumableDownloadProgressBlock(downloadProgress);
@@ -136,7 +136,7 @@
                 NSString *filteredUrl = [YTKNetworkPrivate urlStringWithOriginUrlString:url appendParameters:param];
 
                 NSURLRequest *requestUrl = [NSURLRequest requestWithURL:[NSURL URLWithString:filteredUrl]];
-                NSURLSessionDataTask *dataTask=[_manager dataTaskWithRequest:requestUrl uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+                request.requestTask=[_manager dataTaskWithRequest:requestUrl uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
                     request.resumableDownloadProgressBlock(uploadProgress);
                 } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
                     request.resumableDownloadProgressBlock(downloadProgress);

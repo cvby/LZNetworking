@@ -123,7 +123,10 @@
         } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
             request.resumableDownloadProgressBlock(downloadProgress);
         } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-            [self handleRequestResult:dataTask responseObject:responseObject];
+            [weakSelf handleRequestResult:dataTask responseObject:responseObject];
+        }];
+        [_manager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
+            [weakSelf handleRequestResult:dataTask responseObject:data];
         }];
     } else {
         if (method == YTKRequestMethodGet) {
@@ -137,15 +140,18 @@
                 } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
                     request.resumableDownloadProgressBlock(downloadProgress);
                 } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-                    [self handleRequestResult:dataTask responseObject:responseObject];
+//                    [self handleRequestResult:dataTask responseObject:responseObject];
                 }];
             } else {
                 request.requestTask =[_manager GET:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                     [self handleRequestResult:task responseObject:responseObject];
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                    [self handleRequestResult:task responseObject:error];
+//                    [self handleRequestResult:task responseObject:error];
                 }];
             }
+            [_manager setDataTaskDidReceiveDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSData * _Nonnull data) {
+                [self handleRequestResult:dataTask responseObject:data];
+            }];
         } else if (method == YTKRequestMethodPost) {
             if (constructingBlock != nil) {
                 request.requestTask = [_manager POST:url parameters:param constructingBodyWithBlock:constructingBlock

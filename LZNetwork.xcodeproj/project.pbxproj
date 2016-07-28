@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84080E621CE42D7E00587BDF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84080E561CE42D7E00587BDF /* AFHTTPSessionManager.m */; };
-		84080E631CE42D7E00587BDF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84080E591CE42D7E00587BDF /* AFNetworkReachabilityManager.m */; };
-		84080E641CE42D7E00587BDF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84080E5B1CE42D7E00587BDF /* AFSecurityPolicy.m */; };
-		84080E651CE42D7E00587BDF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84080E5D1CE42D7E00587BDF /* AFURLRequestSerialization.m */; };
-		84080E661CE42D7E00587BDF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84080E5F1CE42D7E00587BDF /* AFURLResponseSerialization.m */; };
-		84080E671CE42D7E00587BDF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84080E611CE42D7E00587BDF /* AFURLSessionManager.m */; };
 		84482B0B1CE2D420004B3138 /* YTKBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482AFA1CE2D420004B3138 /* YTKBaseRequest.m */; };
 		84482B0C1CE2D420004B3138 /* YTKBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482AFC1CE2D420004B3138 /* YTKBatchRequest.m */; };
 		84482B0D1CE2D420004B3138 /* YTKBatchRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84482AFE1CE2D420004B3138 /* YTKBatchRequestAgent.m */; };
@@ -29,23 +23,11 @@
 		846965C91CD98D3A0050CF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846965C81CD98D3A0050CF48 /* Assets.xcassets */; };
 		846965CC1CD98D3A0050CF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846965CA1CD98D3A0050CF48 /* LaunchScreen.storyboard */; };
 		846965F11CD9C9680050CF48 /* GetVexApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 846965F01CD9C9680050CF48 /* GetVexApi.m */; };
-		9655877725FB63E2659CD491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C585D72132E742EAD8FB4 /* libPods.a */; };
+		CFC4096BFBA0540959F6B315 /* libPods-LZNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9392A9B33A97B7FCAEF9C20F /* libPods-LZNetwork.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84080E551CE42D7E00587BDF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		84080E561CE42D7E00587BDF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		84080E571CE42D7E00587BDF /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		84080E581CE42D7E00587BDF /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		84080E591CE42D7E00587BDF /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		84080E5A1CE42D7E00587BDF /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		84080E5B1CE42D7E00587BDF /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		84080E5C1CE42D7E00587BDF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		84080E5D1CE42D7E00587BDF /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		84080E5E1CE42D7E00587BDF /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		84080E5F1CE42D7E00587BDF /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		84080E601CE42D7E00587BDF /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		84080E611CE42D7E00587BDF /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		0E09BD07D1314AD6CB533835 /* Pods-LZNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZNetwork/Pods-LZNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		84482AF91CE2D420004B3138 /* YTKBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBaseRequest.h; sourceTree = "<group>"; };
 		84482AFA1CE2D420004B3138 /* YTKBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKBaseRequest.m; sourceTree = "<group>"; };
 		84482AFB1CE2D420004B3138 /* YTKBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKBatchRequest.h; sourceTree = "<group>"; };
@@ -76,9 +58,8 @@
 		846965CD1CD98D3A0050CF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846965EF1CD9C9680050CF48 /* GetVexApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVexApi.h; sourceTree = "<group>"; };
 		846965F01CD9C9680050CF48 /* GetVexApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVexApi.m; sourceTree = "<group>"; };
-		A58A22BB3D2103F4EA05BF93 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		FAAF27514E6AB05EE65A501F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		FC5C585D72132E742EAD8FB4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9392A9B33A97B7FCAEF9C20F /* libPods-LZNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67C8A134801014CBD012A73 /* Pods-LZNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZNetwork/Pods-LZNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,31 +67,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9655877725FB63E2659CD491 /* libPods.a in Frameworks */,
+				CFC4096BFBA0540959F6B315 /* libPods-LZNetwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84080E541CE42D7E00587BDF /* AFNetworking */ = {
+		221DD3628CEF9429C3CC86F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84080E551CE42D7E00587BDF /* AFHTTPSessionManager.h */,
-				84080E561CE42D7E00587BDF /* AFHTTPSessionManager.m */,
-				84080E571CE42D7E00587BDF /* AFNetworking.h */,
-				84080E581CE42D7E00587BDF /* AFNetworkReachabilityManager.h */,
-				84080E591CE42D7E00587BDF /* AFNetworkReachabilityManager.m */,
-				84080E5A1CE42D7E00587BDF /* AFSecurityPolicy.h */,
-				84080E5B1CE42D7E00587BDF /* AFSecurityPolicy.m */,
-				84080E5C1CE42D7E00587BDF /* AFURLRequestSerialization.h */,
-				84080E5D1CE42D7E00587BDF /* AFURLRequestSerialization.m */,
-				84080E5E1CE42D7E00587BDF /* AFURLResponseSerialization.h */,
-				84080E5F1CE42D7E00587BDF /* AFURLResponseSerialization.m */,
-				84080E601CE42D7E00587BDF /* AFURLSessionManager.h */,
-				84080E611CE42D7E00587BDF /* AFURLSessionManager.m */,
+				9392A9B33A97B7FCAEF9C20F /* libPods-LZNetwork.a */,
 			);
-			path = AFNetworking;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		84482AF81CE2D420004B3138 /* LZNetwork */ = {
@@ -143,8 +112,8 @@
 			children = (
 				846965BB1CD98D3A0050CF48 /* LZNetwork */,
 				846965BA1CD98D3A0050CF48 /* Products */,
-				9C28D75875B25B36CEC8923D /* Pods */,
-				F7F79B2078239BE7998054E0 /* Frameworks */,
+				F2F4AE33BB66344DA27F4A45 /* Pods */,
+				221DD3628CEF9429C3CC86F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,7 +128,6 @@
 		846965BB1CD98D3A0050CF48 /* LZNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				84080E541CE42D7E00587BDF /* AFNetworking */,
 				84482AF81CE2D420004B3138 /* LZNetwork */,
 				846965BF1CD98D3A0050CF48 /* AppDelegate.h */,
 				846965C01CD98D3A0050CF48 /* AppDelegate.m */,
@@ -184,21 +152,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9C28D75875B25B36CEC8923D /* Pods */ = {
+		F2F4AE33BB66344DA27F4A45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FAAF27514E6AB05EE65A501F /* Pods.debug.xcconfig */,
-				A58A22BB3D2103F4EA05BF93 /* Pods.release.xcconfig */,
+				0E09BD07D1314AD6CB533835 /* Pods-LZNetwork.debug.xcconfig */,
+				E67C8A134801014CBD012A73 /* Pods-LZNetwork.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		F7F79B2078239BE7998054E0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FC5C585D72132E742EAD8FB4 /* libPods.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,12 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 846965D01CD98D3A0050CF48 /* Build configuration list for PBXNativeTarget "LZNetwork" */;
 			buildPhases = (
-				92A68CF6B001543A89C3E5EA /* Check Pods Manifest.lock */,
+				FB0E174DDB0B25DBEB653894 /* [CP] Check Pods Manifest.lock */,
 				846965B51CD98D3A0050CF48 /* Sources */,
 				846965B61CD98D3A0050CF48 /* Frameworks */,
 				846965B71CD98D3A0050CF48 /* Resources */,
-				FC0AE1247334AA38E59309AB /* Embed Pods Frameworks */,
-				730337B26D0CB84933EA9D32 /* Copy Pods Resources */,
+				A8F6F1076D21F756708C8C91 /* [CP] Embed Pods Frameworks */,
+				7710CF8EB4912C2231D989CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,49 +230,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		730337B26D0CB84933EA9D32 /* Copy Pods Resources */ = {
+		7710CF8EB4912C2231D989CA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZNetwork/Pods-LZNetwork-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92A68CF6B001543A89C3E5EA /* Check Pods Manifest.lock */ = {
+		A8F6F1076D21F756708C8C91 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZNetwork/Pods-LZNetwork-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC0AE1247334AA38E59309AB /* Embed Pods Frameworks */ = {
+		FB0E174DDB0B25DBEB653894 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -327,17 +287,11 @@
 				84482B111CE2D420004B3138 /* YTKNetworkConfig.m in Sources */,
 				846965C41CD98D3A0050CF48 /* ViewController.m in Sources */,
 				84482B0C1CE2D420004B3138 /* YTKBatchRequest.m in Sources */,
-				84080E621CE42D7E00587BDF /* AFHTTPSessionManager.m in Sources */,
 				846965C11CD98D3A0050CF48 /* AppDelegate.m in Sources */,
-				84080E631CE42D7E00587BDF /* AFNetworkReachabilityManager.m in Sources */,
 				846965BE1CD98D3A0050CF48 /* main.m in Sources */,
 				84482B121CE2D420004B3138 /* YTKNetworkPrivate.m in Sources */,
-				84080E671CE42D7E00587BDF /* AFURLSessionManager.m in Sources */,
-				84080E661CE42D7E00587BDF /* AFURLResponseSerialization.m in Sources */,
 				84482B0B1CE2D420004B3138 /* YTKBaseRequest.m in Sources */,
 				84482B0D1CE2D420004B3138 /* YTKBatchRequestAgent.m in Sources */,
-				84080E651CE42D7E00587BDF /* AFURLRequestSerialization.m in Sources */,
-				84080E641CE42D7E00587BDF /* AFSecurityPolicy.m in Sources */,
 				846965F11CD9C9680050CF48 /* GetVexApi.m in Sources */,
 				84482B131CE2D420004B3138 /* YTKRequest.m in Sources */,
 				84482B101CE2D420004B3138 /* YTKNetworkAgent.m in Sources */,
@@ -368,7 +322,6 @@
 /* Begin XCBuildConfiguration section */
 		846965CE1CD98D3A0050CF48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAAF27514E6AB05EE65A501F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -413,7 +366,6 @@
 		};
 		846965CF1CD98D3A0050CF48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A58A22BB3D2103F4EA05BF93 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -452,7 +404,7 @@
 		};
 		846965D11CD98D3A0050CF48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAAF27514E6AB05EE65A501F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0E09BD07D1314AD6CB533835 /* Pods-LZNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"BUNDLE_LOADER[arch=*]" = "";
@@ -465,7 +417,7 @@
 		};
 		846965D21CD98D3A0050CF48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A58A22BB3D2103F4EA05BF93 /* Pods.release.xcconfig */;
+			baseConfigurationReference = E67C8A134801014CBD012A73 /* Pods-LZNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"BUNDLE_LOADER[arch=*]" = "";

@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LZNetWorking"
-  s.version      = "1.0.0"
+  s.version      = "1.0.4"
   s.summary      = "YTKNetworking with AFNetworking 3.0"
 
   # This description is used to generate tags and improve search results.
